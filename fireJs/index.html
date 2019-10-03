@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fire in JS</title>
+    <style>
+        body{
+            background-color: #000;
+        }
+        table {
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        td {
+            width: 4px;
+            height: 4px;
+            border: 0;
+        }
+        .int{
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .intw {
+            margin: auto;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <div class="int">
+        <div class="intw">
+            <span>Intensidade</span>
+            <button onclick="intensity('+')">+</button>
+            <button onclick="intensity('-')">-</button>
+        </div>
+    </div>
+    <div class="int">
+        <div class="intw">
+            <span>Lado do vento</span><br>
+            <button onclick="wingChange('<')"><<</button>
+            <button onclick="wingChange('|')">||</button>
+            <button onclick="wingChange('>')">>></button>
+        </div>
+    </div>
+    <div class="int">
+        <div class="intw">
+            <span>Cor</span><br>
+            <button onclick="colorChange('red')">Vermelho</button>
+            <button onclick="colorChange('blue')">Azul</button>
+            <button onclick="colorChange('green')">Verde</button>
+        </div>
+    </div>
+</body>
+<script src="fire.js"></script>
+</html>
